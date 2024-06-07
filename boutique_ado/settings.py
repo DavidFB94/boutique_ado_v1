@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,6 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-davidfb94-boutiqueadov1-rbpqv7iidvy.ws-us114.gitpod.io',
     '8000-davidfb94-boutiqueadov1-rbpqv7iidvy.ws-eu114.gitpod.io',
+    'boutique-ado-db.herokuapp.com', 'localhost'
     ]
 
 
@@ -125,7 +127,7 @@ LOGIN_REDIRECT_URL = '/'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
