@@ -31,7 +31,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-davidfb94-boutiqueadov1-rbpqv7iidvy.ws-us114.gitpod.io',
     '8000-davidfb94-boutiqueadov1-rbpqv7iidvy.ws-eu114.gitpod.io',
-    'boutique-ado-db.herokuapp.com', 'localhost'
+    'boutique-ado-db.herokuapp.com',
+    'localhost',
+    'boutique-ado-db-0c2ea9cbae8d.herokuapp.com',
     ]
 
 
